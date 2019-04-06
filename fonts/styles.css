@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Prelo-SemiBold';
+  src: url('Prelo-SemiBold.eot?#iefix') format('embedded-opentype'),  url('Prelo-SemiBold.otf')  format('opentype'),
+	     url('Prelo-SemiBold.woff') format('woff'), url('Prelo-SemiBold.ttf')  format('truetype'), url('Prelo-SemiBold.svg#Prelo-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
