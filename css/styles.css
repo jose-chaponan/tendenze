@@ -95,6 +95,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Times Bold';
+  src: url("../fonts/Times-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Times-Bold.woff") format("woff"), url("../fonts/Times-Bold.ttf") format("truetype"), url("../fonts/Times-Bold.svg#Times-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: #231F20;
   font-family: "Prelo Book";
@@ -106,7 +113,23 @@ strong {
   font-weight: 700;
 }
 
+.timesFont {
+  font-family: "Times Bold";
+}
+
+.blackBackgroundColor {
+  background-color: #231F20;
+}
+
+.yellowBackgroundColor {
+  background-color: #FAE800;
+}
+
 @media all and (min-width: 1px) {
+  h2 {
+    font-size: 3rem;
+    font-weight: 100;
+  }
   .sliderPrincipal {
     height: 100vw;
     background-image: url(../images/bricks.jpg);
@@ -188,9 +211,41 @@ strong {
     display: block;
     margin: 10px 0;
   }
+  .wrappIdea {
+    margin: 20px 0;
+  }
+  .wrappIdea .fraseIdea {
+    height: 250px;
+  }
+  .wrappIdea .fraseIdea h2 {
+    text-align: center;
+  }
+  .wrappIdea .promo {
+    padding: 25px;
+  }
+  .wrappIdea .promo img {
+    width: 80%;
+    height: auto;
+  }
+  .itemServices {
+    width: 80vw;
+  }
+  .itemServices img {
+    width: 100%;
+  }
+  .itemServices h3 {
+    margin: 0;
+    width: 100%;
+    font-family: "Prelo Bold";
+  }
 }
 
 @media all and (min-width: 1025px) {
+  h2 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin: 2vw 0;
+  }
   .sliderPrincipal {
     height: 80vh;
     margin-bottom: 2vw;
@@ -225,5 +280,40 @@ strong {
   }
   .experiencia img:nth-child(3) {
     width: 20%;
+  }
+  .wrappIdea {
+    margin: 2vw 0;
+  }
+  .wrappIdea .fraseIdea {
+    height: 85vh;
+  }
+  .wrappIdea .fraseIdea h2 {
+    text-align: left;
+  }
+  .wrappIdea .promo {
+    padding: 0;
+    height: 85vh;
+    position: relative;
+  }
+  .wrappIdea .promo img {
+    width: auto;
+    height: 80vh;
+  }
+  .wrappIdea .promo::before {
+    content: '';
+    background: #FFFFFF;
+    height: 100%;
+    left: 0;
+    width: .4vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
+  .itemServices {
+    width: 20vw;
+  }
+  .itemServices h3 {
+    width: 80%;
+    margin: auto;
   }
 }

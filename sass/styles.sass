@@ -11,7 +11,20 @@ strong
   font-family: $fontBold
   font-weight: 700
 
+.timesFont
+  font-family: $fontTimes
+
+.blackBackgroundColor
+  background-color: $blackColor
+
+.yellowBackgroundColor
+  background-color: $yellowColor
+
 @media all and (min-width: 1px)
+  h2
+    font-size: 3rem
+    font-weight: 100
+
   .sliderPrincipal
     height: 100vw
     background-image: url(../images/bricks.jpg)
@@ -84,8 +97,32 @@ strong
       width: 100%
       display: block
       margin: 10px 0
+  .wrappIdea
+    margin: 20px 0
+    .fraseIdea
+      height: 250px
+      h2
+        text-align: center
+    .promo
+      padding: 25px
+      img
+        width: 80%
+        height: auto
+  .itemServices
+    width: 80vw
+    img
+      width: 100%
+    h3
+      margin: 0
+      width: 100%
+      font-family: $fontBold
 
 @media all and (min-width: 1025px)
+  h2
+    font-size: 5rem
+    font-weight: 100
+    margin: 2vw 0
+
   .sliderPrincipal
     height: 80vh
     margin-bottom: 2vw
@@ -116,3 +153,32 @@ strong
         width: 25%
       &:nth-child(3)
         width: 20%
+
+  .wrappIdea
+    margin: 2vw 0
+    .fraseIdea
+      height: 85vh
+      h2
+        text-align: left
+    .promo
+      padding: 0
+      height: 85vh
+      position: relative
+      img
+        width: auto
+        height: 80vh
+      &::before
+        content: ''
+        background: $whiteColor
+        height: 100%
+        left: 0
+        width: .4vw
+        position: absolute
+        top: 0
+        bottom: 0
+  
+  .itemServices
+    width: 20vw
+    h3
+      width: 80%
+      margin: auto
