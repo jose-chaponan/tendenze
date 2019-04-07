@@ -1,5 +1,5 @@
 let _callServices = () => {
-  fetch('../json/services.json')
+  fetch('json/services.json')
   .then(response => response.json())
   .then(data => {
     let services = document.getElementsByClassName('services');
@@ -17,7 +17,7 @@ let _callServices = () => {
 }
 
 let _callClients = () => {
-  fetch('../json/clients.json')
+  fetch('json/clients.json')
     .then(response => response.json())
     .then(data => {
       let clientes = document.getElementsByClassName('clientes');
@@ -33,7 +33,7 @@ let _callClients = () => {
 }
 
 let _callGallery = () => {
-  fetch('../json/gallery.json')
+  fetch('json/gallery.json')
     .then(response => response.json())
     .then(data => {
       let gallery = document.getElementsByClassName('gallery');
