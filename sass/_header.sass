@@ -1,20 +1,43 @@
 @media all and (min-width: 1px)
   header
     padding: 0 0
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    background-color: $whiteColor
+    height: 100px
+    z-index: 99
     .logoGTC
       width: 15vw
       min-width: 200px
     .marcas
       width: 15vw
       min-width: 200px
+  
+  .fixedHeader
+    background-color: $whiteColor
+    border-bottom: 3px solid $yellowColor
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 99
+
+    animation-name: fixedHeader
+    animation-direction: normal
+    animation-fill-mode: forwards
+    animation-duration: .4s
+    animation-iteration-count: 1
+    animation-timing-function: cubic-bezier(0.09, 0.01, 0.17, 0.99)
     
   nav 
     ul
       margin: 0
       display: none!important
       li
-        position: relative
         background-color: $whiteColor
+        position: relative
         a
           display: block
           color: $blackColor
@@ -23,6 +46,7 @@
           width: 100%
           font-size: 1.8rem
           font-family: $fontPrincipal
+        
         &:last-child
           border: 2px solid $yellowColor
           padding: 0 25px
@@ -47,11 +71,13 @@
               width: 13px
               height: 15px
               transform: rotate(45deg)
-
+        a:hover
+          color: $yellowColor
 
 @media all and (min-width: 1025px)
   header
     padding: 1.5vw 0
+    height: 3vw
     .marcas
       margin: 0 2vw
   nav 
@@ -59,3 +85,13 @@
       display: flex!important
       li
         margin: 0 .5vw
+
+
+@keyframes fixedHeader
+  0%
+    // top: -20px
+    opacity: 0
+
+  100%
+    // top: 0
+    opacity: 1

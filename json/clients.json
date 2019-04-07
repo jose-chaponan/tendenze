@@ -1,0 +1,151 @@
+{
+  "clientes": [
+    {
+      "id": "1",
+      "img": "images/clientes/nm-viajes.svg",
+      "title": "nuevo mundo viajes",
+      "width": 80,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "2",
+      "img": "images/clientes/el-quinde.svg",
+      "title": "el quinde",
+      "width": 90,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "3",
+      "img": "images/clientes/nm-espacios.svg",
+      "title": "nuevo mundo espacios",
+      "width": 90,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "4",
+      "img": "images/clientes/agil.svg",
+      "title": "agil",
+      "width": 130,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "5",
+      "img": "images/clientes/destinos-mundiales.svg",
+      "title": "destinos mundiales",
+      "width": 110,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "6",
+      "img": "images/clientes/luna-de-miel.svg",
+      "title": "luna de miel",
+      "width": 100,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "7",
+      "img": "images/clientes/perupec.svg",
+      "title": "perupec",
+      "width": 150,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "8",
+      "img": "images/clientes/equifax.svg",
+      "title": "equifax",
+      "width": 150,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "9",
+      "img": "images/clientes/parque-lambramani.svg",
+      "title": "parque lambramani",
+      "width": 140,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "10",
+      "img": "images/clientes/decameron.svg",
+      "title": "decameron",
+      "width": 200,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "11",
+      "img": "images/clientes/airfrance.svg",
+      "title": "airfrance",
+      "width": 290,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "12",
+      "img": "images/clientes/klm.svg",
+      "title": "klm",
+      "width": 120,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "13",
+      "img": "images/clientes/feria-navidena.svg",
+      "title": "feria navideña",
+      "width": 110,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "14",
+      "img": "images/clientes/agrovet.svg",
+      "title": "agrovet",
+      "width": 220,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "15",
+      "img": "images/clientes/radisson.svg",
+      "title": "radisson",
+      "width": 150,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "16",
+      "img": "images/clientes/maxlashes.svg",
+      "title": "maxlashes",
+      "width": 200,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "17",
+      "img": "images/clientes/azzurra.svg",
+      "title": "azzurra",
+      "width": 85,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "18",
+      "img": "images/clientes/nm-lima-hotel.svg",
+      "title": "nm lima hotel",
+      "width": 100,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "19",
+      "img": "images/clientes/unnique.svg",
+      "title": "unnique",
+      "width": 160,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "20",
+      "img": "images/clientes/larcomar.svg",
+      "title": "larcomar",
+      "width": 140,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "21",
+      "img": "images/clientes/marcan.svg",
+      "title": "marcan",
+      "width": 210,
+      "tipo": "horizontal"
+    }
+  ]
+}
