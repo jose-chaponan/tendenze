@@ -75,8 +75,32 @@ _callGallery();
 _callServices();
 _callClients();
 
+let _clickAnchorLink = () =>{
+  document.querySelectorAll('.anchor[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      let header = document.getElementById('header').offsetHeight;
+      let attribute = document.querySelector(this.getAttribute('href'));
+      let position = parseInt(attribute.offsetTop) - (parseInt(header) + 20);
+      // console.log(attribute.offsetTop);
+      window.scrollTo({
+        left: 0,
+        top: position,
+        behavior: 'smooth'
+      });
+      // attribute.scrollIntoView({
+      //   behavior: 'smooth',
+      //   offsetTop: 7000
+      // });
+      // attribute.scrollIntoView()
+    });
+  });
+}
+
 window.onload = () => {
+  _clickAnchorLink();
   window.onscroll = () => {
+    // console.log(window.scrollY);
     _parallaxSlider();
     _fixedHeader();
   }

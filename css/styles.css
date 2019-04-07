@@ -62,26 +62,12 @@
   nav ul li:last-child a::before {
     content: '';
     position: absolute;
-    border: 2px solid #FAE800;
-    width: 20px;
-    height: 20px;
-    bottom: -10px;
-    right: 0;
-    z-index: -1;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  nav ul li:last-child a::after {
-    content: '';
-    position: absolute;
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    bottom: -8px;
-    right: 3px;
-    width: 13px;
-    height: 15px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    background: url(../images/trianglebuble.svg) no-repeat;
+    z-index: 2;
+    width: 40px;
+    height: 21px;
+    right: 10px;
+    bottom: -21px;
   }
   nav ul li a:hover {
     color: #FAE800;
@@ -232,26 +218,13 @@ strong {
   .buble::before {
     content: '';
     position: absolute;
-    border: 2px solid #FAE800;
-    width: 70px;
-    height: 40px;
-    bottom: -10px;
-    right: 40px;
-    z-index: -1;
-    -webkit-transform: rotate(38deg);
-            transform: rotate(38deg);
-  }
-  .buble::after {
-    content: '';
-    position: absolute;
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    bottom: -2px;
-    right: 44px;
-    width: 45px;
-    height: 10px;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    background: url(../images/trianglebuble.svg) no-repeat;
+    background-size: 80%;
+    z-index: 2;
+    width: 60px;
+    height: 25px;
+    right: 30px;
+    bottom: -25px;
   }
   .experiencia {
     margin: 20px 0;
@@ -327,9 +300,8 @@ strong {
     margin: 20px 0;
     width: 90%;
   }
-  footer .buble::after {
-    border-color: #231F20;
-    background-color: #231F20;
+  footer .buble::before {
+    background: url(../images/trianglebuble2.svg) no-repeat;
   }
 }
 
