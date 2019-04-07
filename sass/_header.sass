@@ -7,7 +7,7 @@
     right: 0
     background-color: $whiteColor
     height: 100px
-    z-index: 99
+    z-index: 999
     .logoGTC
       width: 15vw
       min-width: 200px
@@ -22,7 +22,7 @@
     top: 0
     left: 0
     right: 0
-    z-index: 99
+    z-index: 999
 
     animation-name: fixedHeader
     animation-direction: normal
@@ -30,14 +30,72 @@
     animation-duration: .4s
     animation-iteration-count: 1
     animation-timing-function: cubic-bezier(0.09, 0.01, 0.17, 0.99)
-    
+  .logo
+    position: relative
+    z-index: 3
   nav 
+    .hamburger
+      background-color: $whiteColor
+      border: 0
+      width: 38px
+      height: 38px
+      position: absolute
+      top: 0
+      bottom: 0
+      margin: auto
+      right: 10vw
+      font-size: 2.5rem
+      z-index: 99
+    .activeHamburguer
+      background-color: $yellowColor
+      color: $whiteColor
+      animation-name: fixedHeader
+      animation-direction: normal
+      animation-fill-mode: forwards
+      animation-duration: .4s
+      animation-iteration-count: 1
+      animation-timing-function: cubic-bezier(0.09, 0.01, 0.17, 0.99)
+
     ul
+      background-color: rgba($whiteColor, .95)
+      position: fixed
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
       margin: 0
-      display: none!important
+      display: none !important
       li
+        width: 100%
+        text-align: center 
+        a
+          color: $blackColor
+          padding: 5px 0
+          display: block
+          font-size: 1.8rem
+          font-family: $fontPrincipal
+    .activeMenu
+      display: flex!important
+
+@media all and (min-width: 1025px)
+  header
+    padding: 1.5vw 0
+    height: 3vw
+    .marcas
+      margin: 0 2vw
+  nav
+    .hamburger
+      display: none
+    ul
+      background-color: $whiteColor
+      position: relative
+      display: flex!important
+      li
+        margin: 0 .5vw
         background-color: $whiteColor
         position: relative
+        width: auto
+        text-align: left
         a
           display: block
           color: $blackColor
@@ -45,7 +103,6 @@
           position: relative
           width: 100%
           font-size: 1.8rem
-          font-family: $fontPrincipal
         
         &:last-child
           border: 2px solid $yellowColor
@@ -62,18 +119,6 @@
               bottom: -21px
         a:hover
           color: $yellowColor
-
-@media all and (min-width: 1025px)
-  header
-    padding: 1.5vw 0
-    height: 3vw
-    .marcas
-      margin: 0 2vw
-  nav 
-    ul
-      display: flex!important
-      li
-        margin: 0 .5vw
 
 
 @keyframes fixedHeader
