@@ -67,7 +67,7 @@ let _fixedHeader = () => {
 let _parallaxSlider = () => {
     let slider = document.getElementById("sliderPrincipal");
     let scrolled = window.pageYOffset;
-    slider.style.backgroundPosition = 'center ' + - (scrolled * 0.15) + 'px';
+    slider.style.backgroundPosition = 'center ' + - (scrolled * 0.3) + 'px';
 }
 
 /*Ready functions */
