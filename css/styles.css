@@ -286,6 +286,9 @@ strong {
     right: 30px;
     bottom: -25px;
   }
+  .buble:hover {
+    color: #FAE800;
+  }
   .experiencia {
     margin: 20px 0;
   }
