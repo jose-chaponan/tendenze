@@ -420,6 +420,9 @@ strong {
     z-index: 99;
     height: 100vw;
   }
+  footer a {
+    color: #FFFFFF;
+  }
   footer > div > div {
     margin: 30px 0 10px;
   }
