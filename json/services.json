@@ -3,22 +3,26 @@
     {
       "id": "1",
       "img": "images/estrategia-digital.jpg",
-      "title": "Estrategia publicitaria y creativa&nbsp;omnicanal"
+      "title": "Estrategia",
+      "description": "Estrategia publicitaria y creativa omnicanal."
     },
     {
       "id": "2",
       "img": "images/medios.jpg",
-      "title": "Planificación de medios integral&nbsp;y&nbsp;digital"
+      "title": "Medios",
+      "description": "Planificación de medios integral y digital. "
     },
     {
       "id": "3",
       "img": "images/servicios-digitales.jpg",
-      "title": "Servicios digitales. Diseño y programación Web.SEO / SEM. Analítica.Redes sociales. Email&nbsp;marketing.&nbsp;Mobile&nbsp;marketing"
+      "title": "Digital",
+      "description": "Servicios digitales. Diseño y programación Web.SEO / SEM. Analítica.Redes sociales. Email marketing.Mobile marketing. "
     },
     {
       "id": "4",
       "img": "images/graphic-design.jpg",
-      "title": "Diseño gráfico. Vídeos. Animaciones. Photo shooting. Eventos. Activaciones"
+      "title": "Digital",
+      "description": "Diseño gráfico. Vídeos. Animaciones.Photo shooting. Eventos.Activaciones."
     }
   ]
 }

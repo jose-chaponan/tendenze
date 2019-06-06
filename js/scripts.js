@@ -7,10 +7,13 @@ let _callServices = () => {
     arrayData.map((val, index) =>{
       let tagWrapp = document.createElement('div');
       let imgWrapp = document.createElement('img');
-      let caption = document.createElement('h3');
-      caption.innerHTML = val.title;
+      let title = document.createElement('h3');
+      let description = document.createElement('p');
+      title.innerHTML = val.title;
+      description.innerHTML = val.description;
       tagWrapp.appendChild(imgWrapp).src = val.img;
-      tagWrapp.appendChild(caption).classList.add('align_center');
+      tagWrapp.appendChild(title).classList.add('align_center');
+      tagWrapp.appendChild(description).classList.add('align_center');
       services[0].appendChild(tagWrapp).classList.add('itemServices');
     });
   });

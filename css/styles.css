@@ -300,7 +300,7 @@ strong {
   }
   .sliderPrincipal {
     height: 100vw;
-    background-image: url(../images/bricks.jpg);
+    background-image: url(../images/upBackground.jpg);
     background-position: center top;
     background-size: 210%;
     background-repeat: no-repeat;
@@ -355,7 +355,7 @@ strong {
     background-size: 80%;
     z-index: 2;
     width: 60px;
-    height: 25px;
+    height: 26px;
     right: 30px;
     bottom: -25px;
   }
@@ -386,17 +386,28 @@ strong {
     width: 80%;
     height: auto;
   }
-  .itemServices {
+  .queHacemos {
+    margin: auto;
+  }
+  .services {
+    margin: auto;
+  }
+  .services .itemServices {
     width: 80vw;
     margin: 10px 0;
   }
-  .itemServices img {
+  .services .itemServices img {
     width: 100%;
   }
-  .itemServices h3 {
+  .services .itemServices h3 {
+    background-color: #FAE800;
+    font-size: 2rem;
     margin: 0;
     width: 100%;
     font-family: "Prelo Bold";
+  }
+  .servicesTop {
+    margin: auto;
   }
   .servicesTop .buble {
     width: 100%;
@@ -406,8 +417,14 @@ strong {
     font-family: "Prelo Bold";
     font-size: 2rem;
   }
+  .experiencia {
+    margin: auto;
+  }
+  .clientes {
+    margin: auto;
+  }
   .gallery {
-    margin: 20px 0;
+    margin: 20px auto;
   }
   .gallery .itemGallery {
     width: 100%;
@@ -457,7 +474,7 @@ strong {
 
 @media all and (max-width: 500px) {
   .clientes {
-    margin: 20px 0;
+    margin: 20px auto;
   }
   .clientes img {
     margin: 20px 10px;
@@ -505,16 +522,17 @@ strong {
   }
   .sliderPrincipal {
     height: 80vh;
-    margin-bottom: 2vw;
+    margin-bottom: 0;
     margin-top: 6vw;
     background-size: 120%;
   }
   .sliderPrincipal .mensajeSlider {
     margin: 0;
-    height: 90%;
+    height: 100%;
     width: auto;
-    left: 15%;
-    right: inherit;
+    left: inherit;
+    right: 5%;
+    top: 10%;
   }
   .sliderPrincipal .rssTendenze {
     position: absolute;
@@ -532,15 +550,12 @@ strong {
     width: 100%;
     padding: 0;
   }
+  .experiencia {
+    padding: 5vw 0 1vw;
+  }
   .experiencia img {
     width: 18%;
     margin: 0;
-  }
-  .experiencia img:last-child {
-    width: 25%;
-  }
-  .experiencia img:nth-child(3) {
-    width: 20%;
   }
   .wrappIdea {
     margin: 2vw 0;
@@ -570,14 +585,24 @@ strong {
     top: 0;
     bottom: 0;
   }
-  .itemServices {
+  .services {
+    margin: 5vw auto;
+  }
+  .services .itemServices {
     width: 24%;
   }
-  .itemServices h3 {
+  .services .itemServices h3 {
     width: 80%;
     margin: 10px auto;
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 1.2;
+    padding: 5px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .services .itemServices p {
+    width: 80%;
+    margin: auto;
   }
   .servicesTop .buble {
     width: 18%;
