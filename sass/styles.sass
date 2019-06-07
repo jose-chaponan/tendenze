@@ -92,7 +92,11 @@ strong
   .sliderInformacion
     padding: 4vw 0
     overflow: hidden
+    position: relative
     .wrappSliderAbout
+      position: relative
+      padding-bottom: 10vw
+      transition: all ease-in-out .4s
       .itemSlider
         width: 80vw
         font-family: $fontBold
@@ -105,8 +109,26 @@ strong
         p
           font-size: 1.5rem
 
-      .reverseItemSlider
-        flex-direction: row-reverse
+  .reverseItemSlider
+    flex-wrap: wrap-reverse
+
+  .dots
+    position: absolute
+    z-index: 2
+    bottom: 3vw
+    left: 0
+    right: 0
+    button
+      border-radius: 50%
+      width: 20px
+      height: 20px
+      margin: 5px
+      border: 0
+      background-color: $blackColor
+      &:first-child
+        margin-left: 0
+    .active
+      background-color: $yellowColor
   
   .experiencia
     margin: 20px 0
@@ -182,6 +204,7 @@ strong
       color: $whiteColor
       padding: 15px
       background-color: rgba(#000, .8)
+  
   
   footer
     position: relative
@@ -371,11 +394,18 @@ strong
   
   .sliderInformacion
     .wrappSliderAbout
+      padding-bottom: 0
+      padding-top: 5vw
       .itemSlider
         h2
           font-size: 5rem
         p
           font-size: 2.2rem
+
+    .dots
+      bottom: inherit
+      top: 3vw
+    
 
   footer
     height: auto
