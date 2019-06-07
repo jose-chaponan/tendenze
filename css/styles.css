@@ -490,6 +490,9 @@ strong {
     background-position: center;
     height: 70vh;
   }
+  .categorias h2 {
+    margin-top: 5vw;
+  }
   .categorias h2 span {
     line-height: 1.5;
     padding: 2px;
