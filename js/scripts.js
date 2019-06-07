@@ -69,8 +69,22 @@ let _fixedHeader = () => {
 
 let _parallaxSlider = () => {
     let slider = document.getElementById("sliderPrincipal");
-    let scrolled = window.pageYOffset;
-    slider.style.backgroundPosition = 'center ' + - (scrolled * 0.3) + 'px';
+    let posElementWrapp = slider.getBoundingClientRect();
+    let heightScreen = window.innerHeight - 50;
+    if (posElementWrapp.top < heightScreen) {
+      slider.style.backgroundPosition = 'center ' + -parseInt(posElementWrapp.top / 2) + 'px';
+    }
+}
+
+let _parallaxCategorias = () => {
+    let categoriasWrapp = document.getElementsByClassName("categorias");
+    let posElementWrapp = categoriasWrapp[0].getBoundingClientRect();
+    
+    let heightScreen = window.innerHeight - 50;
+    
+    if (posElementWrapp.top < heightScreen) {
+      categoriasWrapp[0].style.backgroundPosition = 'center ' + - parseInt(posElementWrapp.top / 2 ) + 'px';
+    }
 }
 
 /*Ready functions */
@@ -128,28 +142,6 @@ let _onYouTubeIframeAPIReady = (idVideo) => {
   });
 }
 
-// _initialize = () => {
-
-//   // player.setPlaybackQuality('hd1080');
-
-//   // // Update the controls on load
-//   // updateTimerDisplay();
-//   // updateProgressBar();
-
-//   // // Clear any old interval.
-//   // clearInterval(time_update_interval);
-
-//   // // Start interval to update elapsed time display and
-//   // // the elapsed part of the progress bar every second.
-//   // time_update_interval = setInterval(function () {
-//   //   updateTimerDisplay();
-//   //   updateProgressBar();
-//   // }, 1000)
-
-// }
-/** */
-
-
 let _openVideo = () => {
   let videos = document.querySelectorAll('.videoButon');
   for (let i = 0; i < videos.length; i++) {
@@ -191,10 +183,11 @@ window.onload = () => {
   _clickAnchorLink();
   _openHideMenu();
   _closeVideo();
-  // _onYouTubeIframeAPIReady();
+  _parallaxSlider();
 
   window.onscroll = () => {
     _parallaxSlider();
     _fixedHeader();
+    _parallaxCategorias();
   }
 }

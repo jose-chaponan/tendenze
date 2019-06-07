@@ -432,6 +432,22 @@ strong {
   .gallery .itemGallery img {
     width: 100%;
   }
+  .categorias {
+    background-image: url(../images/pista.jpg);
+    background-size: auto 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+  }
+  .categorias h2 span {
+    line-height: 1.5;
+    padding: 2px;
+  }
+  .categorias p {
+    color: #FFFFFF;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
   footer {
     position: relative;
     z-index: 99;
@@ -613,13 +629,30 @@ strong {
   }
   .clientes .cli-cuadrado,
   .clientes .cli-horizontal {
-    margin: 20px 10px;
+    margin: 20px 1.5vw;
   }
   .gallery .itemGallery {
     width: 25%;
   }
   .gallery .itemGallery img {
     width: 99%;
+  }
+  .categorias h2 {
+    font-size: 7rem;
+    width: 50%;
+    position: relative;
+    z-index: 2;
+  }
+  .categorias p {
+    width: 45%;
+    margin: auto;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 5vw 2vw 2vw;
+    position: relative;
+    top: -12vh;
+    z-index: 1;
+    letter-spacing: 5px;
   }
   footer {
     height: auto;
