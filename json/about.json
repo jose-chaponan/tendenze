@@ -1,0 +1,39 @@
+{
+  "aboutData": [
+    {
+      "id": "1",
+      "title": "CREEMOS",
+      "focusTitle": "EN EL CAMBIO",
+      "description": "Desde hace 20 años el mundo está viviendo una gran transformación. La aparición de la tecnología digital está cambiándolo todo, creando un nuevo orden.Está cambiando la forma de cómo aprendemos, cómo trabajamos, cómo vivimos, cómo pensamos.Y también, cómo nos comunicamos...",
+      "reverse": false
+    },
+    {
+      "id": "2",
+      "title": "ESTAMOS",
+      "focusTitle": "VIVIENDO",
+      "description": "la economía del conocimiento: imaginar, crear, aprender, proyectar cómo queremos vivir está a un clic de nuestras manos.Nuestros hábitos no son los mismos de ayer, somos exigentes con el tiempo, no nos gusta esperar más.",
+      "reverse": false
+    },
+    {
+      "id": "3",
+      "title": "LOGRAR LA",
+      "focusTitle": "CONEXIÓN",
+      "description": "Estamos ante un mundo sobre informado donde hay que aprender a caminarlo sin tropezar. Y en esta ola de cambios, la forma como nos comunicamos también cambió y nuestro reto es",
+      "reverse": true
+    },
+    {
+      "id": "4",
+      "title": "NOSOTROS",
+      "focusTitle": "GRUPO TENDENZE",
+      "description": "hemos nacido con el cambio. Y estamos en este viaje más de 15 años: observando, aprendiendo, conociendo y comprendiendo a todas las generaciones que conviven en este nuevo orden.",
+      "reverse": false
+    },
+    {
+      "id": "5",
+      "title": "SOMOS",
+      "focusTitle": "PARTE DEL CAMBIO",
+      "description": "Nuestro equipo está conformado por esta pluralidad de personas de diferente edad. Somos de generaciones diferentes pero parecidos en las ganas de saber, de innovar, de crear, de entender para conectar con las personas.Somos Grupo Tendenze Comunicaciones.",
+      "reverse": true
+    }
+  ]
+}

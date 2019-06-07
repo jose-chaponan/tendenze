@@ -362,6 +362,31 @@ strong {
   .buble:hover {
     color: #FAE800;
   }
+  .sliderInformacion {
+    padding: 4vw 0;
+    overflow: hidden;
+  }
+  .sliderInformacion .wrappSliderAbout .itemSlider {
+    width: 80vw;
+    font-family: "Prelo Bold";
+  }
+  .sliderInformacion .wrappSliderAbout .itemSlider h2 {
+    font-size: 3rem;
+    margin: 0 0 1vw;
+    width: 100%;
+  }
+  .sliderInformacion .wrappSliderAbout .itemSlider h2 span {
+    background-color: #FAE800;
+  }
+  .sliderInformacion .wrappSliderAbout .itemSlider p {
+    font-size: 1.5rem;
+  }
+  .sliderInformacion .wrappSliderAbout .reverseItemSlider {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .experiencia {
     margin: 20px 0;
   }
@@ -631,6 +656,9 @@ strong {
   .clientes .cli-horizontal {
     margin: 20px 1.5vw;
   }
+  .comoHacemos h2 {
+    font-size: 7rem;
+  }
   .gallery .itemGallery {
     width: 25%;
   }
@@ -653,6 +681,12 @@ strong {
     top: -12vh;
     z-index: 1;
     letter-spacing: 5px;
+  }
+  .sliderInformacion .wrappSliderAbout .itemSlider h2 {
+    font-size: 5rem;
+  }
+  .sliderInformacion .wrappSliderAbout .itemSlider p {
+    font-size: 2.2rem;
   }
   footer {
     height: auto;

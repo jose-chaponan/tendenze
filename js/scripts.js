@@ -53,6 +53,30 @@ let _callGallery = () => {
     });
 }
 
+let _getDataAbout = () => {
+  fetch('json/about.json')
+    .then(response => response.json())
+    .then(data => {
+      let sliderInformacion = document.getElementsByClassName('wrappSliderAbout');
+      let arrayData = data.aboutData;
+      arrayData.map((val, index) => {
+        let tagWrapp = document.createElement('div');
+        let title = document.createElement('h2');
+        let description = document.createElement('p');
+        title.innerHTML = val.title + ' <span>'+val.focusTitle+'</span>';
+        description.innerHTML = val.description;
+        tagWrapp.classList.add('itemSlider');
+        tagWrapp.classList.add('section_middle_left');
+        if(val.reverse){
+          tagWrapp.classList.add('reverseItemSlider');
+        }
+        tagWrapp.appendChild(title);
+        tagWrapp.appendChild(description);
+        sliderInformacion[0].appendChild(tagWrapp)
+      });
+    });
+}
+
 /*Fixed header */
 let sticky = 0;
 
@@ -91,6 +115,8 @@ let _parallaxCategorias = () => {
 _callGallery();
 _callServices();
 _callClients();
+_getDataAbout();
+
 
 let _clickAnchorLink = () =>{
   document.querySelectorAll('.anchor[href^="#"]').forEach(anchor => {
@@ -176,6 +202,14 @@ let _closeVideo = () =>{
   }
 
 }
+
+let _sliderAbout = () =>{
+  var itemSlider = document.querySelectorAll('.itemSlider');
+  var wrappSliderAbout = document.getElementsByClassName('wrappSliderAbout');
+  var sizeWrappSlider = itemSlider.length * 80;
+
+  wrappSliderAbout[0].style.width = sizeWrappSlider + 'vw';
+}
  
 window.onload = () => {
   _onYouTubeIframeAPIReady(0);
@@ -184,6 +218,7 @@ window.onload = () => {
   _openHideMenu();
   _closeVideo();
   _parallaxSlider();
+  _sliderAbout();
 
   window.onscroll = () => {
     _parallaxSlider();
