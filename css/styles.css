@@ -694,6 +694,10 @@ strong {
   .gallery .itemGallery img {
     width: 99%;
   }
+  .categorias {
+    height: 35vw;
+    width: 100%;
+  }
   .categorias h2 {
     font-size: 7rem;
     width: 50%;
