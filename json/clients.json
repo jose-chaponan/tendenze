@@ -93,59 +93,80 @@
     },
     {
       "id": "14",
-      "img": "images/clientes/agrovet.svg",
-      "title": "agrovet",
-      "width": 220,
-      "tipo": "horizontal"
-    },
-    {
-      "id": "15",
-      "img": "images/clientes/radisson.svg",
-      "title": "radisson",
-      "width": 150,
-      "tipo": "horizontal"
-    },
-    {
-      "id": "16",
-      "img": "images/clientes/maxlashes.svg",
-      "title": "maxlashes",
-      "width": 200,
-      "tipo": "horizontal"
-    },
-    {
-      "id": "17",
-      "img": "images/clientes/azzurra.svg",
-      "title": "azzurra",
-      "width": 85,
-      "tipo": "cuadrado"
-    },
-    {
-      "id": "18",
       "img": "images/clientes/nm-lima-hotel.svg",
       "title": "nm lima hotel",
       "width": 100,
       "tipo": "cuadrado"
     },
     {
-      "id": "19",
-      "img": "images/clientes/unnique.svg",
-      "title": "unnique",
-      "width": 160,
+      "id": "15",
+      "img": "images/clientes/agrovet.svg",
+      "title": "agrovet",
+      "width": 220,
       "tipo": "horizontal"
     },
     {
-      "id": "20",
+      "id": "16",
+      "img": "images/clientes/radisson.svg",
+      "title": "radisson",
+      "width": 150,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "17",
+      "img": "images/clientes/maxlashes.svg",
+      "title": "maxlashes",
+      "width": 200,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "18",
+      "img": "images/clientes/imaco.svg",
+      "title": "imaco",
+      "width": 200,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "19",
       "img": "images/clientes/larcomar.svg",
       "title": "larcomar",
       "width": 140,
       "tipo": "horizontal"
     },
     {
-      "id": "21",
+      "id": "20",
       "img": "images/clientes/marcan.svg",
       "title": "marcan",
       "width": 210,
       "tipo": "horizontal"
+    },
+    {
+      "id": "21",
+      "img": "images/clientes/azzurra.svg",
+      "title": "azzurra",
+      "width": 85,
+      "tipo": "cuadrado"
+    },
+    {
+      "id": "22",
+      "img": "images/clientes/unnique.svg",
+      "title": "unnique",
+      "width": 160,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "23",
+      "img": "images/clientes/bio-oil.svg",
+      "title": "Bio Oil",
+      "width": 200,
+      "tipo": "horizontal"
+    },
+    {
+      "id": "24",
+      "img": "images/clientes/corporacion.jpg",
+      "title": "Corporacion",
+      "width": 100,
+      "tipo": "cuadrado"
     }
   ]
 }
